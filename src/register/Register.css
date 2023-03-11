@@ -1,0 +1,25 @@
+
+.register-fields{
+    border:1px solid white;
+    border-radius:10px;
+    height:2em;
+}
+
+.register-form{
+    position:relative;
+    top:5em;
+}
+
+.register-header{
+    font-size:22px;
+}
+
+.register-form{
+    border-radius:10px;
+}
+
+@media (min-width:992px){
+    .register-form{
+        width:50% !important;
+    }
+}

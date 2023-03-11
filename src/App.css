@@ -2,37 +2,99 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  background-image:url('./images/pizzabg.jpg');
+}
+
+.noti{
+  z-index: 1;
+  margin-top: 39px;
+  margin-left: -115px;
+
+}
+
+.noti1{
+  margin-top: 3px;
+    height: 35px;
+    width: 20em;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* ----------------------navbardiv page----------------------- */
+.brand-name{
+  color:rgb(216, 56, 56) !important;
+  font-size: 25px !important;
+  margin-left:3em;
+}
+
+.navbar {
+  width:100vw;
+}
+
+.navLinks-home{
+  text-decoration: none;
+  margin-left:20px;
+}
+
+.navLinks-home:hover,.navLinks-login:hover,.Branch:hover{
+  text-decoration: none;
+  font-size: 18px;
+  color:rgb(109, 109, 109) !important;
+  cursor:pointer;
+}
+
+.navLinks-login{
+  text-decoration:none;
+}
+
+.nav-links{
+  width:83vw;
+}
+
+@media (max-width:576px) {
+  .navLinks-home,.navLinks-login{
+    margin-left:25% !important;
+    width:100vw;
+    margin-top:2em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ----------------------navbardiv page ends----------------------- */
+
+/* -------------------------pizza menu starts------------------------- */
+
+
+.pizza-menu-div{
+  width:100vw;
+  min-height:5vh;
+  background-color:rgb(216, 56, 56);
 }
 
-.App-link {
-  color: #61dafb;
+.unordered-menu-list{
+  list-style:none;
+  padding-left:0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-link{
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  vertical-align:middle;
+  font-size:14px;
 }
+
+.menu-link:hover{
+  font-size: 14.2px;
+  color:rgb(252, 248, 248) !important;
+  cursor:pointer;
+}
+
+/* -------------------------pizza menu ends------------------------- */

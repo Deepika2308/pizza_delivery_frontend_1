@@ -1,0 +1,55 @@
+.dropdown-toggle::after{
+    display:none;
+}
+
+.user-link{
+    text-decoration:none;
+    margin-left:2em;
+    color:black;
+    font-size:14px;
+}
+
+.from-check{
+    font-size:13px;
+}
+
+.cart-and-userName{
+    margin-right:6em;
+}
+
+.cart-icon:hover{
+  cursor:pointer;
+}
+
+.branch-and-delivery,.cart-and-userName{
+    align-items:center;
+}
+
+.Branch{
+    /* width:40vw; */
+    margin-left: 3em;
+    font-size:14px;
+  }
+
+  .logout-button{
+    background-color:white;
+    border:none;
+    margin-left:23px;
+    font-size:14px;
+  }
+
+  .logout-button:hover{
+    color:blue;
+  }
+
+  @media (max-width:576px) {
+    .branch-and-delivery{
+      display:flex;
+      flex-direction:column;
+      margin-top:2em;
+    }
+    .cart-and-userName{
+      margin-top:3em;
+      margin-left:35%;
+    }
+  }

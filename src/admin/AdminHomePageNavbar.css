@@ -1,0 +1,19 @@
+
+li{
+    list-style-type:none;
+}
+
+.admin-navbar{
+    text-decoration: none;
+}
+
+#brand-name-link{
+    text-decoration:none;
+    color :rgb(216, 56, 56);
+}
+
+.admin-navbar-links{
+    padding-top:15px;
+    padding-left:35px;
+    width:93%;
+}

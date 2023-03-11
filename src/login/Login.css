@@ -1,0 +1,33 @@
+
+
+.login-background{
+    background-image:url('../images/pizzabg.jpg');
+    width:98vw;
+    height:100vh;
+}
+
+.login-email,.login-password{
+    border-radius: 10px;
+    border:1px solid white;
+    height:2em;
+}
+
+.login-form{
+    border-radius: 10px;
+    position:relative;
+    top:5em;
+    font-weight: normal;
+}
+
+.login-header{
+    /* font-weight:500; */
+    font-size:22px;
+}
+
+
+@media (min-width:992px){
+    .login-form{
+        width:50% !important;
+    }
+}
+

@@ -1,0 +1,67 @@
+
+.card{
+    width:18em;
+    border:1px solid black;
+}
+
+.alert{
+    position:sticky;
+    top:0;
+    z-index:1;
+    width: 19em;
+    margin:auto;
+}
+
+.price{
+    font-size: 12px;
+    margin:0px;
+}
+
+input[type=radio]{
+    height:14px;
+    width:14px;
+}
+
+.form-check-label{
+    font-size:14px;
+}
+
+.pizza-img{
+    width:17.9em;
+    height:12em;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.card-text{
+    font-weight:normal;
+    font-size:12px;
+    height:6em;
+}
+
+.pizza-size-label{
+    font-size:14px;
+}
+
+.pizza-size-options,.pizza-size-select{
+    font-size:13px;
+}
+
+.crust-label,.qty-label{
+    font-size:12px;
+}
+
+@media (max-width:290px){
+    .card{
+        width:12em;
+    }
+    .pizza-img{
+        width:11.9em;
+        height:7em;
+    }
+    .card-text{
+        font-weight:normal;
+        font-size:12px;
+        height:11em;
+    }
+}

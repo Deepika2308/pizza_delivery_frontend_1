@@ -1,0 +1,36 @@
+.btn-item-count{
+    width:14px;
+    height:18px;
+}
+
+.item-count{
+    font-size:15px;
+}
+
+.item-total{
+    font-size:20px;
+}
+
+.increase-decrease-button{
+    margin-top:2px;
+}
+
+.pizza-size,.pizza-crust,.pizza-quantity{
+    font-size:14px;
+}
+
+.totalPrice{
+    font-size:22px;
+}
+
+.checkout-section{
+    border-radius: 10px;
+}
+
+.alert{
+    position:sticky;
+    top:0;
+    z-index:1;
+    width: 19em;
+    margin:auto;
+}
