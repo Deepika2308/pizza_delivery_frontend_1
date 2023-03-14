@@ -18,16 +18,16 @@ export function ResetPassword()
             body:JSON.stringify(obj),
             headers:{"content-type":"application/json"},
         })
-        .then(response => response.json())
-        .then(data => {
-            if(data.status === 200){
-                setMsg(data.msg);
+        .then((response) => {
+            if(response.status === 200){
+                setMsg("Password changed successfully");
                 setSubmitbtn(true);
             }
             else{
-               setMsg(data.msg);
+                setMsg("Error in changing password");
             }
         })
+        .catch((err) => setMsg(err.msg))
     }
     return(
         <form className="container d-flex flex-column gap-3 w-50 m-auto mt-5" onSubmit={onSubmit}>

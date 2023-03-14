@@ -10,10 +10,12 @@ function ForgotPassword() {
   let [msg, setMsg] = useState(false);
   let [tick,setTick] = useState(false);
   let [isAdmin,setIsAdmin] = useState(false);
+  let[showSpinner,setShowSpinner] = useState(false);
 
   const styles= {display : tick ? "block" :"none"};
 
   function onSubmit(e) {
+    setShowSpinner(true);
     e.preventDefault();
     let obj = { 
         email: email,
@@ -27,16 +29,19 @@ function ForgotPassword() {
       .then((response) => response.json())
       .then((data) => {
         if (data.msg === "updateerror") {
+          setShowSpinner(false);
           setMsg(true);
           setResetMsg(
             "Error in creating reset link. Please try again with valid mail id"
           );
         } else if (data.msg === "mailnotsent") {
+          setShowSpinner(false);
           setMsg(true);
           setResetMsg(
             "Email with reset link not sent. Please try again with valid mail id"
           );
         } else if (data.msg === "mailsent") {
+          setShowSpinner(false);
           setMsg(true);
           setResetMsg("Link to reset password has been sent to the mail");
         }
@@ -100,6 +105,7 @@ function ForgotPassword() {
           ""
         )}
         {msg ? <div className="text-danger">{resetMsg}</div> : ""}
+        {showSpinner ? <div className="spinner-border text-primary mt-4 m-auto" role="status"></div> : ""}
 
         <div className="d-flex justify-content-center">
           <button
