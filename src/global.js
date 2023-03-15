@@ -1,1 +1,1 @@
-export const API = "http://localhost:5001";
+export const API = "https://pizza-delivery-backend-oprz7gd3t-deepika2308.vercel.app";
