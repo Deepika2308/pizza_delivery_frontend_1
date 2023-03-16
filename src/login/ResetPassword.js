@@ -9,8 +9,10 @@ export function ResetPassword()
     let[password,setPassword] = useState("");
     let[msg,setMsg] = useState("");
     let[submitbtn,setSubmitbtn] = useState(false);
+    let[showSpinner,setShowSpinner] = useState(false);
 
     function onSubmit(e) {
+        setShowSpinner(true);
         let obj={token:token,password:password,loginUser:loginUser};
         e.preventDefault();
         fetch(`${API}/save/saveNewPassword`,{
@@ -20,10 +22,12 @@ export function ResetPassword()
         })
         .then((response) => {
             if(response.status === 200){
+                setShowSpinner(false);
                 setMsg("Password changed successfully");
                 setSubmitbtn(true);
             }
             else{
+                setShowSpinner(false);
                 setMsg("Error in changing password");
             }
         })
@@ -36,6 +40,7 @@ export function ResetPassword()
             <input className="form-control" id="password" name="password" type="password" placeholder="New Password" onChange={(event) => setPassword(event.target.value)} required></input>
             <button className="btn btn-primary" type="submit" disabled={submitbtn}>Submit</button>
             </div>
+            {showSpinner ? <div className="spinner-border text-primary mt-4 m-auto" role="status"></div> : ""}
             {msg ? <div className="d-flex flex-column gap-3"><div className="text-danger">{msg}</div>{!submitbtn ? <Link to="/forgotPassword">Forgot Password</Link> : <Link to="/login">Login</Link>}</div> :""}
         </form>
     )
