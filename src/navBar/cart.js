@@ -212,6 +212,7 @@ export function Cart(){
         </div>
 
         {/* right section starts */}
+        <div>
         <form className="checkout-section w-25 h-50 py-3 mt-5 bg-danger" onSubmit={handleSubmit}>
           <div className="text-light totalPrice">
             {`Total : ₹ ${checkoutPrice}`}
@@ -234,6 +235,7 @@ export function Cart(){
           {showSpinner ? <div className="spinner-border text-light mt-3 m-auto" role="status"></div> :""}
           </div>
         </form>
+        </div>
         {/* right section ends */}
         </div>
 
