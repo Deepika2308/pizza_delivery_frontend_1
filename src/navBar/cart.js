@@ -212,8 +212,8 @@ export function Cart(){
         </div>
 
         {/* right section starts */}
-        <div className="checkout-div bg-danger">
-        <form className="checkout-section w-25 h-50 py-3 mt-5 bg-danger" onSubmit={handleSubmit}>
+        <div className="checkout-div bg-danger  w-25 h-50 py-3 mt-5">
+        <form className="checkout-section" onSubmit={handleSubmit}>
           <div className="text-light totalPrice">
             {`Total : ₹ ${checkoutPrice}`}
           </div>
