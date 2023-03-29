@@ -182,7 +182,7 @@ export function Cart(){
         {selectBranchMsg ? <div className="alert alert-danger">Please select the nearest branch</div> :""}
         </div>
 
-        <div className="d-flex">
+        <div className="d-flex flex-wrap">
         <div className="d-sm-flex flex-wrap justify-content-evenly gap-5 m-5 mt-4 w-50">
             {cartItems.map((item,index) => {
               checkoutPrice +=item.finalPrice;
