@@ -1,6 +1,7 @@
 #Pizza delivery website test credentials
 
 Customer Id - qwerty202316@gmail.com/pass1234
+
 Admin id - pizza202321@gmail.com/pass1234
 
 Responsive pizza delivery website
