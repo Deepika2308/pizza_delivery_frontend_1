@@ -1,4 +1,4 @@
-#Pizza delivery website test credentials
+**Pizza delivery website test credentials**
 
 Customer Id - qwerty202316@gmail.com/pass1234
 
@@ -6,7 +6,7 @@ Admin id - pizza202321@gmail.com/pass1234
 
 Responsive pizza delivery website
 
-#Customer functionalities
+**Customer functionalities**
 
 Customer has to Register using mail id and password while visiting site for the first time
 
@@ -31,7 +31,7 @@ Once order is placed, customer will get notified in the navigation bar(bell icon
 Customer can also reset password using "Forgot Password?" option in the login page
 
 
-#Admin functionalities
+**Admin functionalities**
 
 Admin can add/delete/edit item details
 
