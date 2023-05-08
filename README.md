@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+#Pizza delivery website test credentials
+Customer Id - qwerty202316@gmail.com/pass1234
+Admin id - pizza202321@gmail.com/pass1234
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Responsive pizza delivery website
 
-## Available Scripts
+#Customer functionalities
 
-In the project directory, you can run:
+Customer has to Register using mail id and password while visiting site for the first time
+Once registration is successful, customer can login, select pizza(s) of their choice and add it to the cart
+Items can be removed from the cart at any time
+Customer can either choose home delivery or pickup service
+Home delivery - cutomer has to enter the address in the popup box
+Pickup - customer has to select the branch from the navigation bar
+Test mode of Razorpay API is used for making payment
+Once payment is done, cutomer will be directed to order history page
+Customer can navigate to order history page any time from the user button in the navigation bar
+Once order is placed, customer will get notified in the navigation bar(bell icon) on order preparation for every 10 secs untill the order is delivered
+Customer can also reset password using "Forgot Password?" option in the login page
 
-### `npm start`
+#Admin functionalities
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Admin can add/delete/edit item details
+Admin functionalities are secured with JSON Web Token
+Admin can also see the existing menus/items in the home page
+Once customer has placed order successfully, admin will receive order details in the mail (nodemailer module)
